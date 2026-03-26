@@ -72,10 +72,12 @@ Set DNS manually to `127.0.0.1` in `Settings > Network`, or configure `/etc/reso
 
 ## Install
 
-### Using Nix
+### Using Nix (fork)
+
+> **Note:** Nix flake support is provided by [ryoppippi's fork](https://github.com/ryoppippi/sptth).
 
 ```sh
-sudo nix run github:jxck/sptth -- config.toml
+sudo nix run github:ryoppippi/sptth -- config.toml
 ```
 
 ### Binary Release
