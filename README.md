@@ -1,5 +1,7 @@
 # sptth
 
+> **Note:** This is a fork of [Jxck/sptth](https://github.com/Jxck/sptth). Pull request creation is restricted on the upstream repository, so Nix flake support is maintained here.
+
 <p align="center">
   <img src="docs/assets/logo.banner.svg" alt="sptth logo" width="900" />
 </p>
