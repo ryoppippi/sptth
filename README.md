@@ -72,6 +72,16 @@ Set DNS manually to `127.0.0.1` in `Settings > Network`, or configure `/etc/reso
 
 ## Install
 
+### Using Nix (fork)
+
+> **Note:** Nix flake support is provided by [ryoppippi's fork](https://github.com/ryoppippi/sptth).
+
+```sh
+sudo nix run github:ryoppippi/sptth -- config.toml
+```
+
+### Binary Release
+
 See `docs/release.md` for release and artifact verification policy.
 
 ### Verify Release Artifacts
@@ -107,6 +117,16 @@ gh attestation verify "${FILE}" --repo jxck/sptth
 ```
 
 ## Development Setup
+
+### Using Nix (recommended)
+
+If you have [Nix](https://nixos.org/) with flakes enabled, the dev shell provides the pinned Rust toolchain automatically:
+
+```sh
+nix develop
+```
+
+### Manual Setup
 
 After cloning, run setup once to install local development tools into `.tools/`.
 
